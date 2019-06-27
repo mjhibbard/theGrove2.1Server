@@ -1,0 +1,26 @@
+{
+  "name": "thegrove2.0",
+  "version": "1.0.0",
+  "description": "The Grove Community Church Website rework and redesign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjhibbard/theGrove2.0.git"
+  },
+  "author": "Mike Hibbard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjhibbard/theGrove2.0/issues"
+  },
+  "homepage": "https://github.com/mjhibbard/theGrove2.0#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "node-sass-middleware": "^0.11.0",
+    "serve-favicon": "^2.5.0"
+  }
+}

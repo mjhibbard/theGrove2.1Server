@@ -1,0 +1,631 @@
+/* Core */
+:root {
+  --main-green: #4c9b2f;
+  --med-green: #264e18;
+  --darker-green: #13270c;
+  --bg-white-gray: #eee;
+  --med-gray: #333;
+}
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 1px;
+  background: var(--bg-white-gray);
+  font-size: 1.5vw;
+}
+
+/* Splash Page Styles */
+.splash-page-img__wrap {
+  width: 100%;
+  position: relative;
+  box-shadow: -1vw 0 4vw 3vw rgba(51, 51, 51, 0.4);
+}
+.splash-page__img {
+  background: url("/images/aaron-burden-287555-unsplash.jpg") center
+    center/cover no-repeat;
+  height: 53vw;
+  filter: grayscale(75%);
+  margin-bottom: 8vw;
+}
+.splash-page__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  background-color: var(--med-gray);
+  padding: 1vw 0;
+  opacity: 0.7;
+  font-size: 3vw;
+  transform: translate(-50%, -50%);
+}
+.splash-page-subtitle__wrap {
+  position: absolute;
+  bottom: 2vw;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5vw;
+  background-color: var(--med-gray);
+  padding: 1.25vw 0;
+  opacity: 0.7;
+  width: 50%;
+  text-align: center;
+}
+.splash-page-subtitle__copy {
+  padding: 1.25vw;
+}
+.splash-page__img-title {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  z-index: 5;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  background-color: var(--med-gray);
+  padding: 1vw 0;
+  opacity: 0.7;
+  font-size: 5vw;
+  transform: translate(-50%, -50%);
+}
+
+/* Main Page Styles */
+.main-page-title-img__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.main-page-title-img__wrap--bgcolor {
+  background-color: var(--med-gray);
+}
+.main-page__title-wrap {
+  width: 100%;
+  position: relative;
+  box-shadow: -1vw 0 4vw 3vw rgba(51, 51, 51, 0.4);
+}
+.main-page__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  background-color: var(--med-gray);
+  padding: 1vw 0;
+  opacity: 0.7;
+  font-size: 12vw;
+  transform: translate(-50%, -50%);
+}
+.main-page__title--subtitle {
+  position: absolute;
+  bottom: 2vw;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 5vw;
+  background-color: var(--med-gray);
+  padding: 1vw 0;
+  opacity: 0.7;
+  width: 100%;
+  text-align: center;
+}
+.main-page__title-img {
+  background: center center/cover no-repeat;
+  height: 100vw;
+  filter: grayscale(75%);
+}
+.main-page__title-img-side {
+  width: 0%;
+  visibility: hidden;
+}
+.main-page__title-img-center {
+  width: 100%;
+}
+.main-page__title-img-1 {
+  background-image: url("../images/Amanda-baptism.jpg");
+}
+.main-page__title-img-2 {
+  background-image: url("../images/music-thegrove2.jpg");
+}
+.main-page__title-img-3 {
+  background-image: url("../images/Vidal-baptism.jpg");
+}
+.main-page__card-wrap {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10vw auto;
+  flex-direction: column-reverse;
+}
+.main-page__card-wrap:nth-child(2) {
+  flex-direction: column;
+}
+.main-page__card-copy {
+  width: 100%;
+  font-size: 5vw;
+  border-right: 0.5vw solid var(--med-gray);
+  border-left: 0.5vw solid var(--med-gray);
+  padding: 1.5vw;
+}
+.main-page__card-img {
+  height: 50vw;
+  background: center center/cover no-repeat;
+  width: 100%;
+  filter: grayscale(75%);
+  margin-bottom: 5vw;
+}
+.main-page__card-img-1 {
+  background-image: url("../images/potluck3.jpg");
+}
+.main-page__card-img-2 {
+  background-image: url("../images/worship_image.jpg");
+}
+.main-page__card-img-3 {
+  background-image: url("../images/Grove-miniGolf.jpg");
+}
+
+/*Story Page Styles */
+.story-page__header {
+  width: 100%;
+  height: 35vw;
+  background-image: url("../images/lg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 -12vw 10vw 0 black;
+}
+.story-page-header__copy {
+  position: absolute;
+  top: 28vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1vw;
+  font-size: 4.5vw;
+  color: white;
+  border-bottom: solid 1vw var(--main-green);
+  text-transform: uppercase;
+}
+.story-page-leader__header {
+  text-align: center;
+  font-size: 3.5vw;
+}
+.story-page__card-wrap {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5vw auto;
+}
+.story-page__card-copy {
+  width: 50%;
+  font-size: 2vw;
+  border-right: 0.5vw solid var(--med-gray);
+  border-left: 0.5vw solid var(--med-gray);
+  padding: 1.5vw;
+}
+.story-page__card-img {
+  height: 20vw;
+  background: center center/cover no-repeat;
+  width: 50%;
+  margin: 0 2vw;
+}
+.story-page__card-img-1 {
+  background-image: url("../images/verse20-forreals.jpg");
+}
+.story-page__card-img-2 {
+  background-image: url("../images/groveAtY.jpg");
+}
+.story-page__card-img-3 {
+  background-image: url("../images/tornado_alley.jpg");
+}
+.story-page__separator {
+  width: 80%;
+  border-bottom: 0.5vw solid var(--med-gray);
+  margin: 10vw auto;
+}
+.story-page-leader__card-img {
+  height: 15vw;
+  background: center center/cover no-repeat;
+  width: 100%;
+}
+.story-page-leader__card-headshot-1 {
+  background-image: url("../images/Andy-Profile.jpg");
+}
+.story-page-leader__card-headshot-2 {
+  background-image: url("../images/mikeprofilepic-crop.jpg");
+}
+.story-page-leader__card-headshot-3 {
+  background-image: url("../images/leadershipteam_placeholder.jpg");
+}
+.story-page-leader__wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vw 0;
+}
+.story-page-leader__card-wrap {
+  width: 25%;
+  padding: 2%;
+  box-shadow: 0vw 1vw 1vw 0vw var(--med-gray);
+  background-color: #fff;
+}
+.story-page-leader__card-copy-wrap {
+  padding: 1.5vw 0;
+  width: 100%;
+}
+.story-page-leader__card-name {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+.story-page-leader__card-title {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+.story-page-leader__card-copy {
+  font-size: 1.25vw;
+  padding-top: 1vw;
+  border-top: solid 0.25vw var(--main-green);
+}
+
+/* Coffee House Styles */
+.coffee__header {
+  width: 100%;
+  background-image: url("../images/coffee-beans.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 1vw solid var(--main-green);
+}
+.coffee-header__copy {
+  color: white;
+  padding: 30vw 5vw 20vw;
+  text-align: center;
+  font-size: 12vw;
+}
+.coffee__content-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.coffee__sidebar {
+  width: 100%;
+  padding: 10vw 0;
+  color: white;
+  background-image: url("../images/vertical-coffee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  z-index: -2;
+  text-align: center;
+}
+.coffee-sidebar__bg-color {
+  position: absolute;
+  background-color: var(--med-gray);
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.coffee-sidebar__title {
+  font-size: 10vw;
+  text-transform: uppercase;
+}
+.coffee-sidebar__info {
+  font-size: 6vw;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.coffee-sidebar__info--title {
+  margin: 3vw 0 1vw 0;
+}
+.coffee__menu {
+  width: 100%;
+  border-top: 1vw solid var(--main-green);
+  border-bottom: 1vw solid var(--main-green);
+}
+.coffee-menu__header {
+  text-align: center;
+}
+.coffee-menu__header-title {
+  color: var(--main-green);
+  font-size: 15vw;
+  text-transform: uppercase;
+  margin: 2vw auto;
+}
+.coffee-menu__header-img {
+  width: 45vw;
+}
+.coffee-menu__content {
+  display: flex;
+  color: var(--main-green);
+  margin: 0 5vw 5vw;
+  flex-direction: column;
+}
+.coffee-menu__content-col {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+.coffee-menu__content-title {
+  font-size: 10vw;
+  text-transform: uppercase;
+  border-bottom: 4px solid var(--main-green);
+  width: 60%;
+  margin: 2vw auto;
+}
+.coffee-menu__content-copy {
+  font-size: 6vw;
+  margin: 1vw 0;
+}
+
+/* About Page "Mission, Vision Page" */
+.about-page {
+  display: flex;
+  padding-top: 10vw;
+}
+.about-page__header {
+  text-align: center;
+  font-size: 8vw;
+  margin-bottom: 3vw;
+}
+.about-page__sidebar {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/cross.jpg");
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.09;
+  top: 55px;
+}
+.about-page__wrap {
+  width: 100%;
+  padding: 10vw 5vw 5vw 4vw;
+}
+.about-page__copy {
+  font-size: 3.15vw;
+  margin: 1vw 2vw 2vw;
+  color: #1a1a1a;
+  padding: 0 4vw;
+}
+.about-page-copy__wrap {
+  line-height: 1.75;
+  letter-spacing: 0.5px;
+  margin: 8vw auto;
+}
+.about-page-copy__title {
+  font-size: 4.5vw;
+  margin-bottom: 4vw;
+}
+.about-page__statement {
+  font-size: 5.5vw;
+  text-transform: capitalize;
+  margin: 0 auto 4vw auto;
+}
+
+/* Call Page Styles */
+.call-page__wrap {
+  margin-bottom: 10vw;
+}
+.call-page-item__wrap {
+  padding: 10vw 0 2vw 2vw;
+}
+.call-page-item__img {
+  height: 40vw;
+  width: 85%;
+  background: center center/cover no-repeat;
+  box-shadow: inset 0 0 10vw 0 black;
+  margin: 0 auto;
+}
+.call-page-item__img-1 {
+  background-image: url("../images/verse14.jpg");
+}
+.call-page-item__img-2 {
+  background-image: url("../images/verse15.jpg");
+}
+.call-page-item__img-3 {
+  background-image: url("../images/verse16.jpg");
+}
+.call-page-item__img-4 {
+  background-image: url("../images/verse17-crop.jpg");
+}
+.call-page-item__img-5 {
+  background-image: url("../images/verse18.jpg");
+}
+.call-page-item__img-6 {
+  background-image: url("../images/verse19-crop.jpg");
+}
+.call-page-item__img-7 {
+  background-image: url("../images/verse20-forreals.jpg");
+}
+.call-page-item__img-8 {
+  background-image: url("../images/verse21.jpg");
+}
+.call-page__header-wrap {
+  background: url("../images/Andy-preaching.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 -10vw 10vw 0 black;
+}
+.call-page__header {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20vw;
+  text-align: center;
+  padding: 50vw 0 0 0;
+}
+.call-page__header-copy {
+  font-size: 5vw;
+  text-align: center;
+  padding: 3vw;
+  background-color: black;
+  color: white;
+}
+.call-page-section__wrap {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 3vw;
+}
+.call-page-section__header {
+  font-size: 6vw;
+  text-align: center;
+  padding: 4vw;
+  order: 1;
+}
+.call-page-section__wrap--no-border {
+  border: none;
+}
+.call-page-section__content-wrap {
+  width: 100%;
+}
+.call-page-section__images-wrap {
+  width: 25%;
+  position: relative;
+  display: none;
+  align-items: center;
+  left: 10vw;
+}
+.call-page-section__image-wrap {
+  width: 100%;
+  position: absolute;
+  transition: all 0.5s;
+}
+.call-page-section__image {
+  object-fit: cover;
+  height: 15vw;
+  transition: all 0.5s;
+}
+.call-page-section__image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 1vw 10vw -1vw black;
+}
+.call-page-section__images-wrap:hover .call-page-section__image:not(:hover) {
+  opacity: 0.9;
+  filter: grayscale(75%);
+}
+.call-page-section__image-wrap:hover {
+  z-index: 5;
+}
+.call-page-section__image-wrap--img1 {
+  top: 4vw;
+  left: -6vw;
+}
+.call-page-section__image-wrap--img2 {
+  top: 0;
+  left: 0;
+}
+.call-page-section__image-wrap--img3 {
+  top: 8vw;
+  left: 4vw;
+}
+.call-page-section__image {
+  width: 100%;
+}
+.call-page-item__copy {
+  font-size: 4.5vw;
+  text-align: center;
+}
+.call-page-item__copy-verse {
+  border-bottom: 1vw solid var(--main-green);
+  padding: 2vw;
+}
+.call-page-item__copy-response {
+  padding: 2vw;
+}
+
+/*Footer Styles */
+.footer__wrap {
+  background-color: var(--main-green);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 5vw 0;
+  box-shadow: 0 100vh 0 100vh var(--main-green);
+}
+.footer-icons__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.footer-icons__icon-wrap {
+  display: flex;
+  justify-content: center;
+  font-size: 12vw;
+}
+.footer-icons__copy {
+  font-size: 8vw;
+  text-align: center;
+}
+.footer-icons__icon {
+  color: white;
+  padding: 0 3vw;
+}
+.footer-icons__icon:hover {
+  transition: all .4s;
+  transform: translateY(-5px);
+  text-shadow: 0 15px 25px rgba(0,0,0,0.4);
+}
+.footer-icons__icon:active {
+  transition: all .4s;
+  transform: translateY(-2px);
+  text-shadow: 0 7px 17px rgba(0,0,0,0.4);
+}
+.footer-img__wrap {
+  width: 40%;
+  margin: 0 auto 2vw;
+}
+.footer-img__img {
+  width: 100%;
+}
+/* .footer-copyright__wrap {
+	align-self: flex-end;
+} */
+.footer-copyright__copy,
+.footer-copyright__copy a {
+  margin: 0 auto;
+  font-size: 3.5vw;
+  color: white;
+}
+.footer-donate-button {
+  background-color: white;
+  font-family: inherit;
+  font-size: 7vw;
+  color: var(--main-green);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7vw;
+  margin-bottom: 1vw;
+  padding: 2vw;
+  display: block;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s all;
+}
+.footer-donate-button:hover {
+  border-radius: 30px;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+}
+.footer-donate-button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 17px rgba(0,0,0,0.4);
+}
+
+/* Media Queries and size adjustings
+*  screen sizes: 576px, 768, 992, 1200, 1485
+*/
